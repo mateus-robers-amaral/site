@@ -1,0 +1,17 @@
+.primary {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid var(--color-secondary);
+    color: var(--color-secondary);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border: 2px solid transparent;
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }

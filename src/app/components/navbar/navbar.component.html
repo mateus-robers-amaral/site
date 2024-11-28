@@ -1,17 +1,17 @@
-<header>
+<nav class="navbar" [ngClass]="{'shadow-navbar': isScrolled}">
     <div class="left-container">
         <p>JC Contabilidade</p>
     </div>
     <div class="right-container">
         <app-dropdown></app-dropdown>
-        <span>Solutions</span>
-        <span>Pricing</span>
-        <span>Resources</span>
+        <span>Soluções</span>
+        <span>Preços</span>
+        <span>Recursos</span>
 
         <div class="buttons-section">
-            <a href="#">Sign in</a>
-            <button class="primary">Book a demo</button>
-            <button class="secondary">Start for free</button>
+            <a href="#">Entrar</a>
+            <app-botao></app-botao>
+            <button class="botao">Teste grátis</button>
         </div>
     </div>
-</header>
+</nav>

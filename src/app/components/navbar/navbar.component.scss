@@ -1,68 +1,62 @@
-@import '/src/styles.scss';
+@import '../../../styles.scss';
 
-header {
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary);
+  height: 80px;
+  width: 100%;
+  color: var(--color-secondary);
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+  gap: 2.5rem;
+
+  .left-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: var(--color-primary);
-    height: 80px;
-    color: var(--color-fourth);
-    gap: 80px;
-    font-size: 16px;
 
-    .left-container {
-        display: flex;
-        align-items: center;
+    p {
+      font-size: 28px;
+      font-weight: 700;
     }
-}
+  }
 
-.right-container {
+  .right-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
 
-
     .buttons-section {
+      display: flex;
+      gap: 24px;
+      font-size: 20px;
+
+      a {
         display: flex;
-        gap: 24px;
-        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: var(--color-secondary);
+      }
 
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: var(--color-fourth);
-        }
-
-        .primary {
-            border-radius: 20px;
-            padding: 10px 20px;
-            background: transparent;
-            border: 2px solid var(--color-fourth);
-            color: var(--color-fourth);
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-
-            &:hover {
-                border: none;
-                background-color: var(--black);
-                color: var(--color-fourth);
-            }
-
-        }
-
-        .secondary {
-            border-radius: 20px;
-            padding: 10px 20px;
-            background: var(--black);
-            border: none;
-            color: var(--color-fourth);
-            cursor: pointer;
-            font-size: 16px;
-        }
+      .botao {
+        border-radius: 20px;
+        padding: 10px 20px;
+        background: var(--black);
+        border: none;
+        color: var(--color-secondary);
+        cursor: pointer;
+        font-size: 20px;
+      }
     }
+  }
+}
+
+.shadow-navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
