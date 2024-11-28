@@ -1,0 +1,11 @@
+@import '../../../styles.scss';
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary);
+    padding: 12px;
+    color: var(--color-secondary);
+}
