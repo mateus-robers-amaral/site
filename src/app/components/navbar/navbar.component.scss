@@ -1,0 +1,68 @@
+@import '/src/styles.scss';
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary);
+    height: 80px;
+    color: var(--color-fourth);
+    gap: 80px;
+    font-size: 16px;
+
+    .left-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+
+    .buttons-section {
+        display: flex;
+        gap: 24px;
+        font-size: 16px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: var(--color-fourth);
+        }
+
+        .primary {
+            border-radius: 20px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid var(--color-fourth);
+            color: var(--color-fourth);
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+                border: none;
+                background-color: var(--black);
+                color: var(--color-fourth);
+            }
+
+        }
+
+        .secondary {
+            border-radius: 20px;
+            padding: 10px 20px;
+            background: var(--black);
+            border: none;
+            color: var(--color-fourth);
+            cursor: pointer;
+            font-size: 16px;
+        }
+    }
+}

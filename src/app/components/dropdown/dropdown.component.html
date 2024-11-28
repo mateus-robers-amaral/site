@@ -1,0 +1,13 @@
+<div class="dropdown" [class.open]="isOpen" (clickOutside)="closeDropdown()">
+    <button class="dropdown-toggle" (click)="toggleDropdown()">
+      Product ▾
+    </button>
+    <ul class="dropdown-menu" *ngIf="isOpen">
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Documents</a></li>
+      <li><a href="#">Ask</a></li>
+      <li><a href="#">Templates</a></li>
+      <li><a href="#">Integrations</a></li>
+      <li><a href="#">Download app</a></li>
+    </ul>
+  </div>
