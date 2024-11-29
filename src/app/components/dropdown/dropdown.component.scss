@@ -10,6 +10,15 @@
     font-size: 20px;
     cursor: pointer;
     color: var(--color-secondary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 28px;
+      transition: transform 0.2s ease-in-out;
+    }
   }
 
   .dropdown-menu {
@@ -23,10 +32,12 @@
     padding: 0;
     width: 200px;
     border-radius: 5px;
-    display: none;
+
     opacity: 0;
     transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition-delay: 1s;
 
     li {
       padding: 10px 15px;
@@ -39,16 +50,23 @@
       }
 
       &:hover {
-        background-color: var(--white);
+        background-color: var(--black);
       }
     }
   }
 
   &.open {
+    .dropdown-toggle {
+      img {
+        transform: rotate(90deg);
+      }
+    }
+
     .dropdown-menu {
-      display: block;
       opacity: 1;
       transform: translateY(0);
+      pointer-events: auto;
+      transition-delay: 1s;
     }
   }
 }

@@ -1,6 +1,7 @@
 <div class="dropdown" [class.open]="isOpen" (clickOutside)="closeDropdown()">
-  <button class="dropdown-toggle" (click)="toggleDropdown()">
-    Produtos ▾ </button>
+  <button class="dropdown-toggle" (click)="toggleDropdown()">Produtos
+    <img src="assets/seta.png" alt="">
+    </button>
   <ul class="dropdown-menu" *ngIf="isOpen">
     <li><a href="#">Especificações</a></li>
     <li><a href="#">Documentos</a></li>
