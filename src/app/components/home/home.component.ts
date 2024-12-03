@@ -3,14 +3,13 @@ import { NavbarComponent } from '../navbar/navbar.component';
 import { BotaoComponent } from '../botao/botao.component';
 import { CarouselComponent } from '../carrossel/carrossel.component';
 import { FooterComponent } from "../footer/footer.component";
-
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     NavbarComponent,
     BotaoComponent,
-    CarouselComponent,
+    // CarouselComponent,
     FooterComponent
 ],
   templateUrl: './home.component.html',

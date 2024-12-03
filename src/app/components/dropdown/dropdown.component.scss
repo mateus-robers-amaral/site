@@ -37,7 +37,6 @@
     transform: translateY(-10px);
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
-    transition-delay: 1s;
 
     li {
       padding: 10px 15px;
@@ -66,7 +65,53 @@
       opacity: 1;
       transform: translateY(0);
       pointer-events: auto;
-      transition-delay: 1s;
+    }
+  }
+
+  // Responsividade
+  @media (max-width: 768px) { // Tablets e dispositivos móveis
+    .dropdown {
+      display: block;
+      width: 100%;
+    }
+
+    .dropdown-toggle {
+      font-size: 18px;
+      img {
+        width: 24px;
+      }
+    }
+
+    .dropdown-menu {
+      position: static; // Torna o menu fixo abaixo do botão
+      width: 100%; // Ocupa toda a largura disponível
+      margin-top: 10px;
+      border-radius: 0;
+
+      li {
+        padding: 10px 5px; // Reduz o padding
+        a {
+          font-size: 14px; // Texto menor para dispositivos menores
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) { // Telas muito pequenas
+    .dropdown-toggle {
+      font-size: 16px;
+      img {
+        width: 20px;
+      }
+    }
+
+    .dropdown-menu {
+      li {
+        padding: 8px 5px;
+        a {
+          font-size: 12px;
+        }
+      }
     }
   }
 }
